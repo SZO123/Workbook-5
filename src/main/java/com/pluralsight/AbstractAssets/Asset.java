@@ -1,18 +1,18 @@
-package com.pluralsight.AbstractAssets.AssetManager;
+package com.pluralsight.AbstractAssets;
 
-public class Asset {
+public abstract class Asset {
     private String description;
     private String dateAcquired;
     private double originalCost;
 
-    // Constructor
+    //Constructor
     public Asset(String description, String dateAcquired, double originalCost) {
         this.description = description;
         this.dateAcquired = dateAcquired;
         this.originalCost = originalCost;
     }
 
-    // Getters and setters
+    //Getters and setters
     public String getDescription() { return description; }
     public void setDescription(String description) { this.description = description; }
 
@@ -23,7 +23,6 @@ public class Asset {
     public void setOriginalCost(double originalCost) { this.originalCost = originalCost; }
 
     // Base getValue() returns original cost
-    public double getValue() {
-        return originalCost;
-    }
+    public abstract double getValue();
+
 }

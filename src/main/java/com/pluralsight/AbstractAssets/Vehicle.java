@@ -1,4 +1,4 @@
-package com.pluralsight.AbstractAssets.AssetManager;
+package com.pluralsight.AbstractAssets;
 
 public class Vehicle extends Asset {
     private String makeModel;

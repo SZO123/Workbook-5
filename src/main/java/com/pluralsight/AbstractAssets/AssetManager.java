@@ -1,4 +1,4 @@
-package com.pluralsight.AbstractAssets.AssetManager;
+package com.pluralsight.AbstractAssets;
 
 import java.util.ArrayList;
 
@@ -14,6 +14,9 @@ public class AssetManager {
         // Add vehicles
         assets.add(new Vehicle("Tom's truck", "2019-03-20", 40000, "Ford F-150", 2019, 120000));
         assets.add(new Vehicle("My car", "2021-05-10", 35000, "Honda Civic", 2021, 90000));
+
+        // Add cash
+        assets.add(new Cash("Cash Stash", "2025-10-29", 5000));
 
         // Loop through assets
         for(Asset asset : assets) {
@@ -31,7 +34,7 @@ public class AssetManager {
                 System.out.println("Make/Model: " + v.getMakeModel() + ", Year: " + v.getYear());
             }
 
-            System.out.println("**************************************");
+            System.out.println("*************************************");
         }
     }
 }

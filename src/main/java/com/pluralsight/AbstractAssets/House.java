@@ -1,4 +1,4 @@
-package com.pluralsight.AbstractAssets.AssetManager;
+package com.pluralsight.AbstractAssets;
 
 public class House extends Asset {
     private String address;
